@@ -1,0 +1,311 @@
+./btree -n 45 -d 14 -m 14 -i sample.txt  (for pagesize 512 fails)
+
+
+[OUTPUT]
+
+
+./btree -n 45 -d 14 -m 14 -i sample.txt 
+sample.txt
+
+ Child process returned without updating split key
+
+ Child process returned without updating split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+root: 141cc40
+[0] leaf 141cc40 
+last_index: 13
+switch_counter: 2
+search direction: ->
+1,1 2,2 3,3 4,4 5,5 6,6 7,7 8,8 9,9 10,a 11,b 12,c 13,d 14,e 141d780 
+[0] leaf 141d780 
+last_index: -1
+switch_counter: 3
+search direction: <-
+141dd80 
+[0] leaf 141dd80 
+last_index: 16
+switch_counter: 0
+search direction: ->
+29,1d 30,1e 31,1f 32,20 33,21 34,22 35,23 36,24 37,25 38,26 39,27 40,28 41,29 42,2a 43,2b 44,2c 45,2d 0 
+-----------------------------------------
+total number of keys: 31
+Total keys inserted = 45
+Total keys deleted = 14
+Total keys searched = 31
+-----------------------------------------------
+root: 141cc40
+[0] leaf 141cc40 
+last_index: 13
+switch_counter: 2
+search direction: ->
+1,1 2,2 3,3 4,4 5,5 6,6 7,7 8,8 9,9 10,a 11,b 12,c 13,d 14,e 141d780 
+[0] leaf 141d780 
+last_index: 24
+switch_counter: 5
+search direction: <-
+0,141d6f0 21090736,141da30 21090736,141da30 21090736,141da30 21090736,141da30 21090736,141da30 21091616,ac143df8 21091680,ac143df8 21091744,ac143df8 21091808,ac143df8 140230682214400,141d6b0 140230682214401,141d9b0 140230682214401,ac143df8 734421210010497075,41 734430001637621786,1a 734985259304615964,1c 734987454032904215,17 734989653227222322,41 735553702521208857,19 735555901715658802,41 736111159382782259,41 736113354111071026,41 736119951009513499,1b 736677403404795928,18 736679602599507506,41 141dd80 
+[0] leaf 141dd80 
+last_index: 16
+switch_counter: 0
+search direction: ->
+29,1d 30,1e 31,1f 32,20 33,21 34,22 35,23 36,24 37,25 38,26 39,27 40,28 41,29 42,2a 43,2b 44,2c 45,2d 0 
+-----------------------------------------
+total number of keys: 56
+Total keys inserted = 45
+Total keys deleted = 14
+Total keys searched = 31
+-----------------------------------------------
+NOT FOUND 29, t = 0
+NOT FOUND 30, t = 0
+NOT FOUND 31, t = 0
+NOT FOUND 32, t = 0
+NOT FOUND 33, t = 0
+NOT FOUND 34, t = 0
+NOT FOUND 35, t = 0
+NOT FOUND 36, t = 0
+NOT FOUND 37, t = 0
+NOT FOUND 38, t = 0
+NOT FOUND 39, t = 0
+NOT FOUND 40, t = 0
+NOT FOUND 41, t = 0
+NOT FOUND 42, t = 0
+NOT FOUND 43, t = 0
+NOT FOUND 44, t = 0
+NOT FOUND 45, t = 0
+root: 141cc40
+[0] leaf 141cc40 
+last_index: 13
+switch_counter: 2
+search direction: ->
+1,1 2,2 3,3 4,4 5,5 6,6 7,7 8,8 9,9 10,a 11,b 12,c 13,d 14,e 141d780 
+[0] leaf 141d780 
+last_index: 20
+switch_counter: 5
+search direction: <-
+21090736,141da30 21090736,141da30 21090736,141da30 21090736,141da30 21090736,141da30 21091552,ac143df8 21091616,ac143df8 21091680,ac143df8 21091744,ac143df8 140230682214401,141d6b0 140230682214401,ac143df8 734423404738785842,41 734430001637621786,1a 734987454032904215,17 734989653227222322,41 735553702521208857,19 735555901715658802,41 736111154916491286,16 736113354111071026,41 736677403404795928,18 736679602599507506,41 141dd80 
+[0] leaf 141dd80 
+last_index: 16
+switch_counter: 0
+search direction: ->
+29,1d 30,1e 31,1f 32,20 33,21 34,22 35,23 36,24 37,25 38,26 39,27 40,28 41,29 42,2a 43,2b 44,2c 45,2d 0 
+-----------------------------------------
+total number of keys: 52
+Total keys inserted = 45
+Total keys deleted = 14
+Total keys searched = 31
+-----------------------------------------------
+root: 141cc40
+[0] leaf 141cc40 
+last_index: 13
+switch_counter: 2
+search direction: ->
+1,1 2,2 3,3 4,4 5,5 6,6 7,7 8,8 9,9 10,a 11,b 12,c 13,d 14,e 141d780 
+[0] leaf 141d780 
+last_index: 19
+switch_counter: 5
+search direction: <-
+0,141d670 21090736,141da30 21090736,141da30 21090736,141da30 21090736,141da30 21091616,ac143df8 21091680,ac143df8 140230682214400,141d630 140230682214401,141d6b0 140230682214401,ac143df8 734423404738785842,41 734430001637621786,1a 734987454032904215,17 734989653227222322,41 735553702521208857,19 735555901715658802,41 736111154916491286,16 736113354111071026,41 736677403404795928,18 736679602599507506,41 141dd80 
+[0] leaf 141dd80 
+last_index: 16
+switch_counter: 0
+search direction: ->
+29,1d 30,1e 31,1f 32,20 33,21 34,22 35,23 36,24 37,25 38,26 39,27 40,28 41,29 42,2a 43,2b 44,2c 45,2d 0 
+-----------------------------------------
+total number of keys: 51
+Total keys inserted = 45
+Total keys deleted = 14
+Total keys searched = 31
+-----------------------------------------------
+NOT FOUND 29, t = 0
+NOT FOUND 30, t = 0
+NOT FOUND 31, t = 0
+NOT FOUND 32, t = 0
+NOT FOUND 33, t = 0
+NOT FOUND 34, t = 0
+NOT FOUND 35, t = 0
+NOT FOUND 36, t = 0
+NOT FOUND 37, t = 0
+NOT FOUND 38, t = 0
+NOT FOUND 39, t = 0
+NOT FOUND 40, t = 0
+NOT FOUND 41, t = 0
+NOT FOUND 42, t = 0
+NOT FOUND 43, t = 0
+NOT FOUND 44, t = 0
+NOT FOUND 45, t = 0
+root: 141cc40
+[0] leaf 141cc40 
+last_index: 13
+switch_counter: 2
+search direction: ->
+1,1 2,2 3,3 4,4 5,5 6,6 7,7 8,8 9,9 10,a 11,b 12,c 13,d 14,e 141d780 
+[0] leaf 141d780 
+last_index: 15
+switch_counter: 5
+search direction: <-
+21090736,141da30 21090736,141da30 21090736,141da30 21090736,141da30 21091552,ac143df8 21091616,ac143df8 140230682214401,141d630 140230682214401,ac143df8 734421205544599573,15 734423404738785842,41 734987454032904215,17 734989653227222322,41 735547105622634546,41 736111154916491286,16 736113354111071026,41 736677403404795928,18 141dd80 
+[0] leaf 141dd80 
+last_index: 16
+switch_counter: 0
+search direction: ->
+29,1d 30,1e 31,1f 32,20 33,21 34,22 35,23 36,24 37,25 38,26 39,27 40,28 41,29 42,2a 43,2b 44,2c 45,2d 0 
+-----------------------------------------
+total number of keys: 47
+Total keys inserted = 45
+Total keys deleted = 14
+Total keys searched = 31
+-----------------------------------------------
+root: 141cc40
+[0] leaf 141cc40 
+last_index: 13
+switch_counter: 2
+search direction: ->
+1,1 2,2 3,3 4,4 5,5 6,6 7,7 8,8 9,9 10,a 11,b 12,c 13,d 14,e 141d780 
+[0] leaf 141d780 
+last_index: 14
+switch_counter: 5
+search direction: <-
+0,141d5f0 21090736,141da30 21090736,141da30 21091552,ac143df8 140230682214400,141d5b0 140230682214401,141d630 140230682214401,ac143df8 734421205544599573,15 734423404738785842,41 734987454032904215,17 734989653227222322,41 735547105622634546,41 736111154916491286,16 736113354111071026,41 736677403404795928,18 141dd80 
+[0] leaf 141dd80 
+last_index: 16
+switch_counter: 0
+search direction: ->
+29,1d 30,1e 31,1f 32,20 33,21 34,22 35,23 36,24 37,25 38,26 39,27 40,28 41,29 42,2a 43,2b 44,2c 45,2d 0 
+-----------------------------------------
+total number of keys: 46
+Total keys inserted = 45
+Total keys deleted = 14
+Total keys searched = 31
+-----------------------------------------------
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+NOT FOUND 29, t = 0
+NOT FOUND 30, t = 0
+NOT FOUND 31, t = 0
+NOT FOUND 32, t = 0
+NOT FOUND 33, t = 0
+NOT FOUND 34, t = 0
+NOT FOUND 35, t = 0
+NOT FOUND 36, t = 0
+NOT FOUND 37, t = 0
+NOT FOUND 38, t = 0
+NOT FOUND 39, t = 0
+NOT FOUND 40, t = 0
+NOT FOUND 41, t = 0
+NOT FOUND 42, t = 0
+NOT FOUND 43, t = 0
+NOT FOUND 44, t = 0
+NOT FOUND 45, t = 0
+root: 141cc40
+[0] leaf 141cc40 
+last_index: 13
+switch_counter: 2
+search direction: ->
+1,1 2,2 3,3 4,4 5,5 6,6 7,7 8,8 9,9 10,a 11,b 12,c 13,d 14,e 141d780 
+[0] leaf 141d780 
+last_index: 10
+switch_counter: 5
+search direction: <-
+21090736,141da30 21090736,141da30 21091488,ac143df8 140230682214401,141d5b0 140230682214401,ac143df8 734421205544599573,15 734423404738785842,41 735547105622634546,41 735555897249497108,14 736111154916491286,16 736681797327796273,41 141dd80 
+[0] leaf 141dd80 
+last_index: 16
+switch_counter: 0
+search direction: ->
+29,1d 30,1e 31,1f 32,20 33,21 34,22 35,23 36,24 37,25 38,26 39,27 40,28 41,29 42,2a 43,2b 44,2c 45,2d 0 
+-----------------------------------------
+total number of keys: 42
+Total keys inserted = 45
+Total keys deleted = 14
+Total keys searched = 31
+-----------------------------------------------
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+
+ Child process returned without deleting split key
+*** Error in `./btree': free(): invalid pointer: 0x000000000141d4f0 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x7f8a19bf17e5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x7f8a19bfa37a]
+/lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x7f8a19bfe53c]
+./btree[0x401d95]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7f8a19b9a830]
+./btree[0x403249]
+======= Memory map: ========
+00400000-0040b000 r-xp 00000000 fd:01 14831738                           /home/jayashree/projects/fast-fair/single/btree
+0060a000-0060b000 rw-p 0000a000 fd:01 14831738                           /home/jayashree/projects/fast-fair/single/btree
+0140b000-0143d000 rw-p 00000000 00:00 0                                  [heap]
+7f8a14000000-7f8a14021000 rw-p 00000000 00:00 0 
+7f8a14021000-7f8a18000000 ---p 00000000 00:00 0 
+7f8a1995d000-7f8a19975000 r-xp 00000000 fd:01 9700021                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f8a19975000-7f8a19b74000 ---p 00018000 fd:01 9700021                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f8a19b74000-7f8a19b75000 r--p 00017000 fd:01 9700021                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f8a19b75000-7f8a19b76000 rw-p 00018000 fd:01 9700021                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f8a19b76000-7f8a19b7a000 rw-p 00000000 00:00 0 
+7f8a19b7a000-7f8a19d3a000 r-xp 00000000 fd:01 9700023                    /lib/x86_64-linux-gnu/libc-2.23.so
+7f8a19d3a000-7f8a19f3a000 ---p 001c0000 fd:01 9700023                    /lib/x86_64-linux-gnu/libc-2.23.so
+7f8a19f3a000-7f8a19f3e000 r--p 001c0000 fd:01 9700023                    /lib/x86_64-linux-gnu/libc-2.23.so
+7f8a19f3e000-7f8a19f40000 rw-p 001c4000 fd:01 9700023                    /lib/x86_64-linux-gnu/libc-2.23.so
+7f8a19f40000-7f8a19f44000 rw-p 00000000 00:00 0 
+7f8a19f44000-7f8a19f5b000 r-xp 00000000 fd:01 9699350                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f8a19f5b000-7f8a1a15a000 ---p 00017000 fd:01 9699350                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f8a1a15a000-7f8a1a15b000 r--p 00016000 fd:01 9699350                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f8a1a15b000-7f8a1a15c000 rw-p 00017000 fd:01 9699350                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f8a1a15c000-7f8a1a264000 r-xp 00000000 fd:01 9700014                    /lib/x86_64-linux-gnu/libm-2.23.so
+7f8a1a264000-7f8a1a463000 ---p 00108000 fd:01 9700014                    /lib/x86_64-linux-gnu/libm-2.23.so
+7f8a1a463000-7f8a1a464000 r--p 00107000 fd:01 9700014                    /lib/x86_64-linux-gnu/libm-2.23.so
+7f8a1a464000-7f8a1a465000 rw-p 00108000 fd:01 9700014                    /lib/x86_64-linux-gnu/libm-2.23.so
+7f8a1a465000-7f8a1a5e1000 r-xp 00000000 fd:01 46661754                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f8a1a5e1000-7f8a1a7e1000 ---p 0017c000 fd:01 46661754                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f8a1a7e1000-7f8a1a7eb000 r--p 0017c000 fd:01 46661754                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f8a1a7eb000-7f8a1a7ed000 rw-p 00186000 fd:01 46661754                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f8a1a7ed000-7f8a1a7f1000 rw-p 00000000 00:00 0 
+7f8a1a7f1000-7f8a1a7f8000 r-xp 00000000 fd:01 9700065                    /lib/x86_64-linux-gnu/librt-2.23.so
+7f8a1a7f8000-7f8a1a9f7000 ---p 00007000 fd:01 9700065                    /lib/x86_64-linux-gnu/librt-2.23.so
+7f8a1a9f7000-7f8a1a9f8000 r--p 00006000 fd:01 9700065                    /lib/x86_64-linux-gnu/librt-2.23.so
+7f8a1a9f8000-7f8a1a9f9000 rw-p 00007000 fd:01 9700065                    /lib/x86_64-linux-gnu/librt-2.23.so
+7f8a1a9f9000-7f8a1aa1f000 r-xp 00000000 fd:01 9700018                    /lib/x86_64-linux-gnu/ld-2.23.so
+7f8a1abec000-7f8a1abf3000 rw-p 00000000 00:00 0 
+7f8a1ac1d000-7f8a1ac1e000 rw-p 00000000 00:00 0 
+7f8a1ac1e000-7f8a1ac1f000 r--p 00025000 fd:01 9700018                    /lib/x86_64-linux-gnu/ld-2.23.so
+7f8a1ac1f000-7f8a1ac20000 rw-p 00026000 fd:01 9700018                    /lib/x86_64-linux-gnu/ld-2.23.so
+7f8a1ac20000-7f8a1ac21000 rw-p 00000000 00:00 0 
+7ffeac124000-7ffeac145000 rw-p 00000000 00:00 0                          [stack]
+7ffeac17c000-7ffeac17f000 r--p 00000000 00:00 0                          [vvar]
+7ffeac17f000-7ffeac181000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+
+
