@@ -276,8 +276,8 @@ bool remove(btree* bt, entry_key_t key, bool only_rebalance = false, bool with_l
     }
 
         
-
-        // crash before rebalancing
+       #ifdef CRASH_MERGE
+       // crash before rebalancing
        // Fork a new process now
 	pid_t pid = fork();
 
@@ -295,6 +295,7 @@ bool remove(btree* bt, entry_key_t key, bool only_rebalance = false, bool with_l
                  int returnStatus;
                  waitpid(pid, &returnStatus, 0);
 
+	#endif
 			//Remove a key from the parent node
 			entry_key_t deleted_key_from_parent = 0;
 			bool is_leftmost_node = false;
@@ -428,13 +429,14 @@ bool remove(btree* bt, entry_key_t key, bool only_rebalance = false, bool with_l
 				clflush((char *)&(left_sibling->hdr.sibling_ptr), sizeof(page *));
 			}
 
-
+		#ifdef CRASH_MERGE
 		}// fork else
                 else {
                         // fork failed
                         cout << "\nFork failed" << endl;
                         return true;
                 }
+		#endif
 
 	return true;
 }
@@ -586,6 +588,7 @@ page *store (btree* bt, char* left, entry_key_t key, char* right, bool flush, pa
 		}
 
 
+		#ifdef CRASH_SPLIT
 	 	// Fork a new process now
 		pid_t pid = fork();	
 	
@@ -603,6 +606,8 @@ page *store (btree* bt, char* left, entry_key_t key, char* right, bool flush, pa
 		 int returnStatus;
 		 waitpid(pid, &returnStatus, 0);
 
+		#endif
+
 		//cout << "\nStarting step 2 of split - add split key to parent\n" << endl;
 		// Set a new root or insert the split key to the parent
 			if(bt->root == (char *)this) { // only one node can update the root ptr
@@ -616,6 +621,8 @@ page *store (btree* bt, char* left, entry_key_t key, char* right, bool flush, pa
 			}
 
 			return ret;
+
+		#ifdef CRASH_SPLIT
 		}// else fork 
 
 		else {
@@ -623,6 +630,7 @@ page *store (btree* bt, char* left, entry_key_t key, char* right, bool flush, pa
 			cout << "\nFork failed" << endl;
 			return ret;
 		}
+		#endif
 
 	}
 	}
